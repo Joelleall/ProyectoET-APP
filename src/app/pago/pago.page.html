@@ -1,0 +1,36 @@
+<ion-content [fullscreen]="true">
+<div class="title-container">
+  <div class="title">Te llevo APP</div>
+  <ion-icon id="volver" name="arrow-back-outline" (click)="volverPaginaAnterior()"></ion-icon>
+</div>
+<h2 class="titulo-datos-tarjeta">Detalles de la transferencia</h2>
+<div class="formulario">
+  <form>
+    <ion-item>
+      <ion-label position="floating">Banco a transferir</ion-label>
+      <ion-input type="text" [(ngModel)]="bancoTarjeta" name="nombre" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Monto de transferencia</ion-label>
+      <ion-input type="number" [(ngModel)]="Monto" name="monto" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Numero de cuenta</ion-label>
+      <ion-input type="number" [(ngModel)]="NdeCuenta" name="cuenta" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Gmail</ion-label>
+      <ion-input type="text" [(ngModel)]="Gmail" name="gmail" required></ion-input>
+    </ion-item>
+
+  </form>
+  <div class="botones">
+    <ion-button class="btn" expand="block" (click)="transferirDinero()">Iniciar</ion-button>
+
+  </div>
+
+</div>
+  </ion-content>

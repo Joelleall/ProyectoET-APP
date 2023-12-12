@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+*{
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.title-container {
+    background-color: #f7a817;
+    color: #fff;
+    padding: 16px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    font-size: 30px;
+    margin-top: 8px;
+  }
+  #volver{
+    width: 30px;
+    height: 30px;
+  }
+
+  .formulario{
+    padding-top: 10px;
+    display: flex;
+    width: 309px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+  }
+  .titulo-datos-tarjeta {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-top: 40px; /* Añade un poco de espacio arriba del título */
+    font-size: 20px; /* Establece el tamaño de fuente deseado */
+    color: #333; /* Cambia el color del texto si lo necesitas */
+  }
+  h1 {
+    font-size: 24px;
+  }
+
+  .btn {
+    --background: #f7a817;
+    --box-shadow: none; /* Elimina la sombra */
+    width: 300px;
+    padding: 40px 30px; /* Aumenta el relleno horizontal para hacerlo más ancho en los lados */
+    display: block; /* Convierte el botón en un bloque para centrarlo */
+    margin: 0 auto; /* Centra horizontalmente */
+    border: none; /* Elimina el borde */
+  }

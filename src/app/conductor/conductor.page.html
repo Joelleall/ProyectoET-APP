@@ -1,0 +1,30 @@
+<ion-content [fullscreen]="true">
+	<div class="title-container">
+	  <div class="title">Te llevo APP</div>
+	  <ion-icon id="volver" name="arrow-back-outline" (click)="volverPaginaAnterior()"></ion-icon>
+	</div>
+	<div id="contenido">
+	  <div #map id="map"></div>
+	  <h3>Destino</h3>
+	  <div class="input-wrapper">
+		<input type="text" [(ngModel)]="end" (input)="updateSearchResults()" placeholder="Destino">
+		<input type="number" [(ngModel)]="precio" placeholder="Precio" max="99999"> 
+	  </div>
+	  <div class="input-wrapper">
+		<input type="number" [(ngModel)]="asientos" placeholder="Asientos" min="1" max="4"> 
+		<input type="time" [(ngModel)]="hora" placeholder="Hora">
+	  </div>
+	  <div class="input-wrapper">
+		<input type="number" [(ngModel)]="telefono" placeholder="Teléfono" pattern="[0-9]{9}"> 
+		<input type="text" [(ngModel)]="chofer" placeholder="Chofer" maxlength="20"> 
+	  </div>
+	  <div class="botones">
+		<ion-button expand="full" class="mi-boton" (click)="submitForm()">Iniciar</ion-button>
+	  </div>
+	  <ion-list *ngIf="autocompleteItems" [hidden]="autocompleteItems.length === 0">
+		<ion-item *ngFor="let item of autocompleteItems" tappable (click)="selectSearchResult(item)">
+		  {{ item.description }}
+		</ion-item>
+	  </ion-list>
+	</div>
+  </ion-content>

@@ -1,0 +1,38 @@
+<ion-content [fullscreen]="true">
+  <div class="title-container">
+    <div class="title">Te llevo APP</div>
+    <ion-icon id="volver" name="arrow-back-outline" (click)="volverPaginaAnterior()"></ion-icon>
+  </div>
+  <div class="data-container">
+    <ion-card *ngFor="let viaje of viajes">
+      <ion-card-header>
+        Viajes disponibles
+      </ion-card-header >
+      <ion-list>
+        <ion-item>
+          <ion-label position="stacked">Destino</ion-label>
+          {{ viaje.end }}
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Precio</ion-label>
+          {{ viaje.precio }}
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Asientos</ion-label>
+          {{ viaje.asientos }}
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Hora</ion-label>
+          {{ viaje.hora }}
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Nombre del chofer</ion-label>
+          {{ viaje.chofer }}
+        </ion-item>
+      </ion-list>
+      <ion-button (click)="contactarConductor(viaje.telefono, viaje.nombre)">Contactar al Conductor</ion-button>
+    </ion-card>
+  </div>
+  
+ 
+</ion-content>

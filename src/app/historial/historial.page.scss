@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+*{
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.title-container {
+    background-color: #f7a817;
+    color: #fff;
+    padding: 16px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    font-size: 30px;
+    margin-top: 8px;
+  }
+  #volver{
+    width: 30px;
+    height: 30px;
+  }
+
+  #title{
+    text-align: center;
+  }
+#contenedor {
+     padding: 30px;
+     height: 100vh;
+     background-color: #fafafa;
+     flex-direction: column;
+     align-items: center;
+}
+   
+.title-container {
+     background-color: #f7a817;
+     color: #fff;
+     padding: 25px;
+     width: 100%;
+     text-align: center;
+   }
+
+
+   
+   
+   .historial-item {
+     color: black;
+     border: 1px solid #ccc;
+     padding: 10px;
+     margin-bottom: 20px;
+     background-color: #fff;
+     border-radius: 5px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   }
+   
+   .historial-info {
+     
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 10px;
+   }
+   
+   .historial-label {
+     font-weight: bold;
+     flex: 1;
+     margin-right: 10px;
+   }
+   
+   .historial-value {
+     flex: 2;
+   }
+   
+   ion-button {
+     margin-top: 20px;
+   }
+
+   .btn {
+    --background: #f7a817;
+    --box-shadow: none; /* Elimina la sombra */
+    width: 300px;
+    padding: 10px 30px; /* Aumenta el relleno horizontal para hacerlo más ancho en los lados */
+    display: block; /* Convierte el botón en un bloque para centrarlo */
+    margin: 0 auto; /* Centra horizontalmente */
+    border: none; /* Elimina el borde */
+  }

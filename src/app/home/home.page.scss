@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+*{
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#contenedor {
+  background-color: #fafafa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-container {
+  background-color: #f7a817;
+  color: #fff;
+  height: 15vh;
+  display: grid;
+  align-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  font-size: 30px;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+  height: 75vh;
+}
+
+
+
+.box {
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+.box-text {
+  color: black;
+  margin-top: 0%;
+}
+
+.animate__swing {
+  font-size: 25px; 
+  color: black;
+  margin-top: 24px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7a817;
+  color: rgb(252, 251, 251);
+  height: 10vh;
+  width: 100%;
+} 
+
+footer ion-icon {
+  margin: 4%;
+  width: 50px;
+  height: 35px;
+  
+}
+
+
+ion-button {
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+  --background: transparent;
+}
+
+ion-button:hover {
+  --background: #f7a817;
+}
+
+@media (max-height:739px) {
+  ion-button {
+    width: 150px; 
+    height: 130px;
+  }
+  img{
+    width: 110px; 
+    height: 120px;
+  }
+}
+  
+@media (min-height:740px) {
+  ion-button {
+    width: 300px; 
+    height: 180px;
+  }
+  img{
+    width: 180px; 
+    height: 180px;
+  }
+}
+  
+
+img{
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+}
+img:hover{
+  mix-blend-mode: multiply;
+}
+
+.my-element {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: bounce; 
+  animation-duration: 2s;
+  
+}
+

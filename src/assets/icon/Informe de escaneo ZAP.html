@@ -1,0 +1,2928 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html -->
+<html lang="es" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Informe de escaneo ZAP</title>
+<link href="./Informe de escaneo ZAP_files/normalize.css" rel="stylesheet">
+<link href="./Informe de escaneo ZAP_files/main.css" rel="stylesheet">
+<link href="./Informe de escaneo ZAP_files/colors.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="./Informe de escaneo ZAP_files/m=el_main_css"></head>
+<body>
+	<header>
+		<h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Informe de escaneo ZAP</font></font></h1>
+		<p>
+			<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Generado con </font></font></span> <a href="https://zaproxy.org/"><img src="./Informe de escaneo ZAP_files/zap32x32.png" alt="El logotipo de ZAP." class="zap-logo"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ZAP </font></font></a>
+			<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">el dom 19 nov 2023, a las 21:28:26</font></font></span>
+		</p>
+		<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Versión ZAP: 2.14.0</font></font></p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contenido</font></font></h2>
+			<nav>
+				<ol>
+					<li><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#about-this-report"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acerca de este informe</font></font></a>
+						<ol>
+							<li><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#report-description"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Descripción del reporte</font></font></a></li>
+							<li><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#report-parameters"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Parámetros del informe</font></font></a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#summaries"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Resúmenes</font></font></a>
+						<ol>
+							<li><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#risk-confidence-counts"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Alerta cuenta por riesgo y confianza</font></font></a></li>
+							<li><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#site-risk-counts"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Recuento de alertas por sitio y riesgo</font></font></a></li>
+							<li><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-counts"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Recuentos de alertas por tipo de alerta</font></font></a></li>
+						</ol></li>
+					<li><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alerts"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Alertas</font></font></a>
+						<ol>
+							
+							 
+							
+							
+							
+							
+							<li><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alerts--risk-2-confidence-3"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Riesgo</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Medio</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , </font></font><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Confianza</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="confidence-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Alta </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(2)</font></font></span></a></li>
+							
+							<li><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alerts--risk-2-confidence-2"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Riesgo</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Medio</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , </font></font><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Confianza</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="confidence-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Media </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(1)</font></font></span></a></li>
+							
+							<li><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alerts--risk-2-confidence-1"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Riesgo</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Medio</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , </font></font><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Confianza</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="confidence-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Baja </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(1)</font></font></span></a></li>
+							  
+							
+							
+							
+							
+							<li><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alerts--risk-1-confidence-3"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Riesgo</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bajo</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , </font></font><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Confianza</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="confidence-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Alta </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(1)</font></font></span></a></li>
+							
+							<li><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alerts--risk-1-confidence-2"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Riesgo</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bajo</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , </font></font><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Confianza</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="confidence-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Media </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(4)</font></font></span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							
+							
+							<li><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alerts--risk-0-confidence-2"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Riesgo</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Informativo</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , </font></font><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Confianza</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="confidence-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Medio </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(3)</font></font></span></a></li>
+							
+							<li><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alerts--risk-0-confidence-1"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Riesgo</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Informativo</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , </font></font><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Confianza</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="confidence-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Baja </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(2)</font></font></span></a></li>
+							  
+						</ol></li>
+					<li><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#appendix"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Apéndice</font></font></a>
+						<ol>
+							<li><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-types"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tipos de alerta</font></font></a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section id="about-this-report" class="about-this-report">
+			<h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acerca de este informe</font></font></h2>
+
+			<section id="report-description">
+				<h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Descripción del reporte</font></font></h3>
+				<div class="report-description--container">
+					
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+	
+	  Informe de vulnerabilidad 
+	  
+</font></font></p>
+ 
+				</div>
+			</section>
+
+			<section id="report-parameters">
+				<h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Parámetros del informe</font></font></h3>
+				<div class="report-parameters--container">
+					<h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contextos</font></font></h4>
+					
+					
+					<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">No se seleccionó ningún contexto, por lo que todos los contextos se incluyeron de forma predeterminada.</font></font></p>
+					  
+
+					<h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sitios</font></font></h4>
+					
+					<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Se incluyeron los siguientes sitios:</font></font></p>
+					<ul class="sites-list">
+						<li><span class="site"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://localhost</font></font></span></li>
+					</ul>
+					
+					<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(Si no se seleccionó ningún sitio, todos los sitios se incluyeron de forma predeterminada).</font></font></p>
+					<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Un sitio incluido también debe estar dentro de uno de los contextos incluidos para que sus datos se incluyan en el informe.</font></font></p>
+
+					<h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Niveles de riesgo</font></font></h4>
+					<p>
+						<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Incluido</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> :
+						 
+						 </font></font><span class="included-risk-codes"><span class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Alto</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , </font></font><span class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Medio</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , </font></font><span class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bajo</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , </font></font><span class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Informativo</font></font></span></span>
+					</p>
+					<p>
+						<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Excluido</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> :
+						  </font></font><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ninguno</font></font></span>
+						
+					</p>
+
+					<h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Niveles de confianza</font></font></h4>
+					<p>
+						<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Incluido</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> :
+						
+						
+						 </font></font><span class="included-confidence-codes"><span class="confidence-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Confirmado por el usuario</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , </font></font><span class="confidence-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Alto</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , </font></font><span class="confidence-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Medio</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , </font></font><span class="confidence-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bajo</font></font></span></span>
+					</p>
+					<p>
+						<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Excluido</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> :
+						
+						
+						 </font><span class="included-confidence-codes"><span class="confidence-level"><font style="vertical-align: inherit;">Confirmado por el usuario</font></span></span><span class="included-confidence-codes"><font style="vertical-align: inherit;"> , </font></span><span class="included-confidence-codes"><span class="confidence-level"><font style="vertical-align: inherit;">Alto</font></span></span><span class="included-confidence-codes"><font style="vertical-align: inherit;"> , </font></span><span class="included-confidence-codes"><span class="confidence-level"><font style="vertical-align: inherit;">Medio</font></span></span><span class="included-confidence-codes"><font style="vertical-align: inherit;"> , </font></span><span class="included-confidence-codes"><span class="confidence-level"><font style="vertical-align: inherit;">Bajo</font></span></span><span class="included-confidence-codes"><font style="vertical-align: inherit;"> , </font></span><span class="included-confidence-codes"><span class="confidence-level"><font style="vertical-align: inherit;">Falso positivo</font></span></span></font><span class="included-confidence-codes"> <span class="confidence-level"><font style="vertical-align: inherit;"></font></span><font style="vertical-align: inherit;"></font><span class="confidence-level"><font style="vertical-align: inherit;"></font></span><font style="vertical-align: inherit;"></font><span class="confidence-level"><font style="vertical-align: inherit;"></font></span><font style="vertical-align: inherit;"></font><span class="confidence-level"><font style="vertical-align: inherit;"></font></span><font style="vertical-align: inherit;"></font><span class="confidence-level"><font style="vertical-align: inherit;"></font></span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Resúmenes</font></font></h2>
+
+			<section id="risk-confidence-counts">
+				<h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Alerta cuenta por riesgo y confianza</font></font></h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta tabla muestra el número de alertas para cada nivel de riesgo y confianza incluidos en el informe.</font></font></p>
+						<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(Los porcentajes entre paréntesis representan el recuento como porcentaje del número total de alertas incluidas en el informe, redondeado a un decimal).</font></font></p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col style="width: 14.0%"><col style="width: 14.0%"><col style="width: 14.0%"><col style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Confianza</font></font></th>
+						</tr>
+						<tr>
+							<th scope="col"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Usuario confirmado</font></font></th>
+							<th scope="col"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Alto</font></font></th>
+							<th scope="col"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Medio</font></font></th>
+							<th scope="col"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bajo</font></font></th>
+							<th scope="col"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Total</font></font></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup" rowspan="5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Riesgo</font></font></th>
+							<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Alto</font></font></th>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(0,0%)</font></font></span></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(0,0%)</font></font></span></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(0,0%)</font></font></span></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(0,0%)</font></font></span></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(0,0%)</font></font></span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Medio</font></font></th>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(0,0%)</font></font></span></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(14,3%)</font></font></span></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(7,1%)</font></font></span></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(7,1%)</font></font></span></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(28,6%)</font></font></span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bajo</font></font></th>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(0,0%)</font></font></span></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(7,1%)</font></font></span></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(28,6%)</font></font></span></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(0,0%)</font></font></span></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(35,7%)</font></font></span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Informativo</font></font></th>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(0,0%)</font></font></span></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(0,0%)</font></font></span></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(21,4%)</font></font></span></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(14,3%)</font></font></span></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(35,7%)</font></font></span></td>
+						</tr>
+						<tr>
+							<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Total</font></font></th>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(0,0%)</font></font></span></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(21,4%)</font></font></span></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(57,1%)</font></font></span></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(21,4%)</font></font></span></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">14 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(100%)</font></font></span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section id="site-risk-counts">
+				<h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Recuento de alertas por sitio y riesgo</font></font></h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta tabla muestra, para cada sitio para el cual se generaron una o más alertas, la cantidad de alertas generadas en cada nivel de riesgo.</font></font></p>
+						<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Se han excluido de estos recuentos las alertas con un nivel de confianza de "falso positivo".</font></font></p>
+						<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(Los números entre paréntesis son el número de alertas generadas para el sitio en ese nivel de riesgo o por encima de él).</font></font></p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col style="width: 16.25%"><col style="width: 16.25%"><col style="width: 16.25%"><col style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Riesgo</font></font></th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Alto </font></font></span><br>  <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(= Alto)</font></font></span>  
+							</th>
+							<th scope="col">
+								<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Medio </font></font></span><br>   <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(&gt;= Medio)</font></font></span> 
+							</th>
+							<th scope="col">
+								<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bajo </font></font></span><br>   <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(&gt;= Bajo)</font></font></span> 
+							</th>
+							<th scope="col">
+								<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Informativo </font></font></span><br>   <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(&gt;= Informativo)</font></font></span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup" rowspan="1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sitio</font></font></th>
+							<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://localhost</font></font></th>
+							
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(0)</font></font></span></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(4)</font></font></span></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(9)</font></font></span></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(14)</font></font></span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section id="alert-type-counts">
+				<h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Recuentos de alertas por tipo de alerta</font></font></h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta tabla muestra la cantidad de alertas de cada tipo de alerta, junto con el nivel de riesgo del tipo de alerta.</font></font></p>
+						<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(Los porcentajes entre paréntesis representan cada recuento como porcentaje, redondeado a un decimal, del número total de alertas incluidas en este informe).</font></font></p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tipo de alerta</font></font></th>
+							<th scope="col"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Riesgo</font></font></th>
+							<th scope="col"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contar</font></font></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ausencia de tokens Anti-CSRF</font></font></a></th>
+							<td class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Medio</font></font></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(21,4%)</font></font></span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Encabezado de la política de seguridad de contenido (CSP) no establecido</font></font></a></th>
+							<td class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Medio</font></font></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(35,7%)</font></font></span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Archivo oculto encontrado</font></font></a></th>
+							<td class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Medio</font></font></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(14,3%)</font></font></span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Falta el encabezado anti-clickjacking</font></font></a></th>
+							<td class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Medio</font></font></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(21,4%)</font></font></span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cookie sin bandera HttpOnly</font></font></a></th>
+							<td class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bajo</font></font></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(7,1%)</font></font></span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cookie sin atributo SameSite</font></font></a></th>
+							<td class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bajo</font></font></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(7,1%)</font></font></span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-6"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">El servidor filtra información a través de los campos de encabezado de respuesta HTTP "X-Powered-By"</font></font></a></th>
+							<td class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bajo</font></font></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(21,4%)</font></font></span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-7"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">El servidor filtra información de la versión a través del campo de encabezado de respuesta HTTP "Servidor"</font></font></a></th>
+							<td class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bajo</font></font></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(57,1%)</font></font></span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-8"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Falta el encabezado X-Content-Type-Options</font></font></a></th>
+							<td class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bajo</font></font></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(42,9%)</font></font></span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-9"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cookie de alcance amplio</font></font></a></th>
+							<td class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Informativo</font></font></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(7,1%)</font></font></span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-10"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aplicación web moderna</font></font></a></th>
+							<td class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Informativo</font></font></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(21,4%)</font></font></span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-11"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Respuesta de gestión de sesión identificada</font></font></a></th>
+							<td class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Informativo</font></font></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(14,3%)</font></font></span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-12"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Agente de usuario Fuzzer</font></font></a></th>
+							<td class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Informativo</font></font></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">12 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(85,7%)</font></font></span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-13"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Atributo de elemento HTML controlable por el usuario (Posible XSS)</font></font></a></th>
+							<td class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Informativo</font></font></td>
+							<td><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 </font></font></span><br> <span class="additional-info-percentages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(7,1%)</font></font></span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Total</font></font></th>
+							<td></td>
+							<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">14</font></font></td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Alertas</font></font></h2>
+			<ol>
+				
+				 
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Riesgo</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Medio</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , </font></font><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Confianza</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="confidence-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Alta </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(2)</font></font></span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://localhost </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(2)</font></font></span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Encabezado de la política de seguridad de contenido (CSP) no establecido </font></font></a> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(1)</font></font></span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OBTENER http://localhost/sitemap.xml</font></font></span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Etiquetas de alerta</font></font></th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OWASP_2021_A05</font></font></a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OWASP_2017_A06</font></font></a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Descripción de la alerta</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">La Política de seguridad de contenido (CSP) es una capa adicional de seguridad que ayuda a detectar y mitigar ciertos tipos de ataques, incluidos Cross Site Scripting (XSS) y ataques de inyección de datos. </font><font style="vertical-align: inherit;">Estos ataques se utilizan para todo, desde el robo de datos hasta la destrucción de sitios o la distribución de malware. </font><font style="vertical-align: inherit;">CSP proporciona un conjunto de encabezados HTTP estándar que permiten a los propietarios de sitios web declarar fuentes de contenido aprobadas que los navegadores deben poder cargar en esa página; los tipos cubiertos son JavaScript, CSS, marcos HTML, fuentes, imágenes y objetos integrables como subprogramas de Java. Archivos ActiveX, audio y vídeo.</font></font></p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pedido</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de solicitud y sección de encabezado (230 bytes)</font></font></summary>
+				
+				<pre><code>GET http://localhost/sitemap.xml HTTP/1.1<font></font>
+host: localhost<font></font>
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36<font></font>
+pragma: no-cache<font></font>
+cache-control: no-cache<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de la solicitud (0 bytes)</font></font></summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Respuesta</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de estado y sección de encabezado (186 bytes)</font></font></summary>
+				
+				<pre><code>HTTP/1.1 404 Not Found<font></font>
+Date: Mon, 20 Nov 2023 00:23:54 GMT<font></font>
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.0.28<font></font>
+Content-Length: 296<font></font>
+Content-Type: text/html; charset=iso-8859-1<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de respuesta (296 bytes)</font></font></summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"&gt;<font></font>
+&lt;html&gt;&lt;head&gt;<font></font>
+&lt;title&gt;404 Not Found&lt;/title&gt;<font></font>
+&lt;/head&gt;&lt;body&gt;<font></font>
+&lt;h1&gt;Not Found&lt;/h1&gt;<font></font>
+&lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;<font></font>
+&lt;hr&gt;<font></font>
+&lt;address&gt;Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.0.28 Server at localhost Port 80&lt;/address&gt;<font></font>
+&lt;/body&gt;&lt;/html&gt;<font></font>
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Solución</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Asegúrese de que su servidor web, servidor de aplicaciones, equilibrador de carga, etc. esté configurado para establecer el encabezado Content-Security-Policy.</font></font></p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Archivo oculto encontrado </font></font></a> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(1)</font></font></span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OBTENER http://localhost/server-status</font></font></span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Etiquetas de alerta</font></font></th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OWASP_2021_A05</font></font></a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/05-Enumerate_Infrastructure_and_Application_Admin_Interfaces"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">WSTG-v42-CONF-05</font></font></a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OWASP_2017_A06</font></font></a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Descripción de la alerta</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Se identificó un archivo confidencial como accesible o disponible. </font><font style="vertical-align: inherit;">Esto puede filtrar información administrativa, de configuración o de credenciales que una persona malintencionada puede aprovechar para atacar aún más el sistema o realizar esfuerzos de ingeniería social.</font></font></p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Otra información</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">estado_del_servidor_apache</font></font></p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pedido</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de solicitud y sección de encabezado (232 bytes)</font></font></summary>
+				
+				<pre><code>GET http://localhost/server-status HTTP/1.1<font></font>
+host: localhost<font></font>
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36<font></font>
+pragma: no-cache<font></font>
+cache-control: no-cache<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de la solicitud (0 bytes)</font></font></summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Respuesta</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de estado y sección de encabezado (180 bytes)</font></font></summary>
+				
+				<pre><code>HTTP/1.1 200 OK<font></font>
+Date: Mon, 20 Nov 2023 00:23:59 GMT<font></font>
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.0.28<font></font>
+Content-Length: 4900<font></font>
+Content-Type: text/html; charset=ISO-8859-1<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de respuesta (4900 bytes)</font></font></summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"&gt;<font></font>
+&lt;html&gt;&lt;head&gt;<font></font>
+&lt;title&gt;Apache Status&lt;/title&gt;<font></font>
+&lt;/head&gt;&lt;body&gt;<font></font>
+&lt;h1&gt;Apache Server Status for localhost (via 127.0.0.1)&lt;/h1&gt;<font></font>
+<font></font>
+&lt;dl&gt;&lt;dt&gt;Server Version: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.0.28&lt;/dt&gt;<font></font>
+&lt;dt&gt;Server MPM: WinNT&lt;/dt&gt;<font></font>
+&lt;dt&gt;Apache Lounge VS16 Server built: Mar  7 2023 13:21:03<font></font>
+&lt;/dt&gt;&lt;/dl&gt;&lt;hr /&gt;&lt;dl&gt;<font></font>
+&lt;dt&gt;Current Time: Sunday, 19-Nov-2023 21:23:59 Pacific SA Daylight Time&lt;/dt&gt;<font></font>
+&lt;dt&gt;Restart Time: Sunday, 19-Nov-2023 12:17:04 Pacific SA Daylight Time&lt;/dt&gt;<font></font>
+&lt;dt&gt;Parent Server Config. Generation: 1&lt;/dt&gt;<font></font>
+&lt;dt&gt;Parent Server MPM Generation: 0&lt;/dt&gt;<font></font>
+&lt;dt&gt;Server uptime:  9 hours 6 minutes 55 seconds&lt;/dt&gt;<font></font>
+&lt;dt&gt;Server load: -1.00 -1.00 -1.00&lt;/dt&gt;<font></font>
+&lt;dt&gt;Total accesses: 231 - Total Traffic: 3.1 MB - Total Duration: 97290&lt;/dt&gt;<font></font>
+&lt;dt&gt;.00704 requests/sec - 98 B/second - 13.6 kB/request - 421.169 ms/request&lt;/dt&gt;<font></font>
+&lt;dt&gt;3 requests currently being processed, 147 idle workers&lt;/dt&gt;<font></font>
+&lt;/dl&gt;&lt;pre&gt;________________________________________________________________<font></font>
+________________________________________________________________<font></font>
+___C____________W___K_&lt;/pre&gt;<font></font>
+&lt;p&gt;Scoreboard Key:&lt;br /&gt;<font></font>
+"&lt;b&gt;&lt;code&gt;_&lt;/code&gt;&lt;/b&gt;" Waiting for Connection, <font></font>
+"&lt;b&gt;&lt;code&gt;S&lt;/code&gt;&lt;/b&gt;" Starting up, <font></font>
+"&lt;b&gt;&lt;code&gt;R&lt;/code&gt;&lt;/b&gt;" Reading Request,&lt;br /&gt;<font></font>
+"&lt;b&gt;&lt;code&gt;W&lt;/code&gt;&lt;/b&gt;" Sending Reply, <font></font>
+"&lt;b&gt;&lt;code&gt;K&lt;/code&gt;&lt;/b&gt;" Keepalive (read), <font></font>
+"&lt;b&gt;&lt;code&gt;D&lt;/code&gt;&lt;/b&gt;" DNS Lookup,&lt;br /&gt;<font></font>
+"&lt;b&gt;&lt;code&gt;C&lt;/code&gt;&lt;/b&gt;" Closing connection, <font></font>
+"&lt;b&gt;&lt;code&gt;L&lt;/code&gt;&lt;/b&gt;" Logging, <font></font>
+"&lt;b&gt;&lt;code&gt;G&lt;/code&gt;&lt;/b&gt;" Gracefully finishing,&lt;br /&gt; <font></font>
+"&lt;b&gt;&lt;code&gt;I&lt;/code&gt;&lt;/b&gt;" Idle cleanup of worker, <font></font>
+"&lt;b&gt;&lt;code&gt;.&lt;/code&gt;&lt;/b&gt;" Open slot with no current process&lt;br /&gt;<font></font>
+&lt;/p&gt;<font></font>
+<font></font>
+<font></font>
+&lt;table border="0"&gt;&lt;tr&gt;&lt;th&gt;Srv&lt;/th&gt;&lt;th&gt;PID&lt;/th&gt;&lt;th&gt;Acc&lt;/th&gt;&lt;th&gt;M&lt;/th&gt;&lt;th&gt;SS&lt;/th&gt;&lt;th&gt;Req&lt;/th&gt;&lt;th&gt;Dur&lt;/th&gt;&lt;th&gt;Conn&lt;/th&gt;&lt;th&gt;Child&lt;/th&gt;&lt;th&gt;Slot&lt;/th&gt;&lt;th&gt;Client&lt;/th&gt;&lt;th&gt;Protocol&lt;/th&gt;&lt;th&gt;VHost&lt;/th&gt;&lt;th&gt;Request&lt;/th&gt;&lt;/tr&gt;<font></font>
+<font></font>
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;13364&lt;/td&gt;&lt;td&gt;1/28/28&lt;/td&gt;&lt;td&gt;&lt;b&gt;C&lt;/b&gt;<font></font>
+&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;31717&lt;/td&gt;&lt;td&gt;0.3&lt;/td&gt;&lt;td&gt;0.58&lt;/td&gt;&lt;td&gt;0.58<font></font>
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /robots.txt HTTP/1.1&lt;/td&gt;&lt;/tr&gt;<font></font>
+<font></font>
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;13364&lt;/td&gt;&lt;td&gt;85/95/95&lt;/td&gt;&lt;td&gt;&lt;b&gt;W&lt;/b&gt;<font></font>
+&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;5340&lt;/td&gt;&lt;td&gt;121.0&lt;/td&gt;&lt;td&gt;0.77&lt;/td&gt;&lt;td&gt;0.77<font></font>
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /server-status HTTP/1.1&lt;/td&gt;&lt;/tr&gt;<font></font>
+<font></font>
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;13364&lt;/td&gt;&lt;td&gt;0/24/24&lt;/td&gt;&lt;td&gt;_<font></font>
+&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;9&lt;/td&gt;&lt;td&gt;9085&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.42&lt;/td&gt;&lt;td&gt;0.42<font></font>
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;&lt;/td&gt;&lt;td nowrap&gt;&lt;/td&gt;&lt;/tr&gt;<font></font>
+<font></font>
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;13364&lt;/td&gt;&lt;td&gt;0/16/16&lt;/td&gt;&lt;td&gt;_<font></font>
+&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;2666&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.14&lt;/td&gt;&lt;td&gt;0.14<font></font>
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;&lt;/td&gt;&lt;td nowrap&gt;&lt;/td&gt;&lt;/tr&gt;<font></font>
+<font></font>
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;13364&lt;/td&gt;&lt;td&gt;13/44/44&lt;/td&gt;&lt;td&gt;&lt;b&gt;K&lt;/b&gt;<font></font>
+&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;10&lt;/td&gt;&lt;td&gt;17627&lt;/td&gt;&lt;td&gt;11.3&lt;/td&gt;&lt;td&gt;0.85&lt;/td&gt;&lt;td&gt;0.85<font></font>
+&lt;/td&gt;&lt;td&gt;127.0.0.1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /AlertMed/ HTTP/1.1&lt;/td&gt;&lt;/tr&gt;<font></font>
+<font></font>
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;0-0&lt;/b&gt;&lt;/td&gt;&lt;td&gt;13364&lt;/td&gt;&lt;td&gt;0/24/24&lt;/td&gt;&lt;td&gt;_<font></font>
+&lt;/td&gt;&lt;td&gt;21343&lt;/td&gt;&lt;td&gt;56&lt;/td&gt;&lt;td&gt;30852&lt;/td&gt;&lt;td&gt;0.0&lt;/td&gt;&lt;td&gt;0.31&lt;/td&gt;&lt;td&gt;0.31<font></font>
+&lt;/td&gt;&lt;td&gt;::1&lt;/td&gt;&lt;td&gt;http/1.1&lt;/td&gt;&lt;td nowrap&gt;localhost:80&lt;/td&gt;&lt;td nowrap&gt;GET /phpmyadmin/themes/pmahomme/img/b_select.png HTTP/1.1&lt;/td&gt;&lt;/tr&gt;<font></font>
+<font></font>
+&lt;/table&gt;<font></font>
+ &lt;hr /&gt; &lt;table&gt;<font></font>
+ &lt;tr&gt;&lt;th&gt;Srv&lt;/th&gt;&lt;td&gt;Child Server number - generation&lt;/td&gt;&lt;/tr&gt;<font></font>
+ &lt;tr&gt;&lt;th&gt;PID&lt;/th&gt;&lt;td&gt;OS process ID&lt;/td&gt;&lt;/tr&gt;<font></font>
+ &lt;tr&gt;&lt;th&gt;Acc&lt;/th&gt;&lt;td&gt;Number of accesses this connection / this child / this slot&lt;/td&gt;&lt;/tr&gt;<font></font>
+ &lt;tr&gt;&lt;th&gt;M&lt;/th&gt;&lt;td&gt;Mode of operation&lt;/td&gt;&lt;/tr&gt;<font></font>
+&lt;tr&gt;&lt;th&gt;SS&lt;/th&gt;&lt;td&gt;Seconds since beginning of most recent request&lt;/td&gt;&lt;/tr&gt;<font></font>
+ &lt;tr&gt;&lt;th&gt;Req&lt;/th&gt;&lt;td&gt;Milliseconds required to process most recent request&lt;/td&gt;&lt;/tr&gt;<font></font>
+ &lt;tr&gt;&lt;th&gt;Dur&lt;/th&gt;&lt;td&gt;Sum of milliseconds required to process all requests&lt;/td&gt;&lt;/tr&gt;<font></font>
+ &lt;tr&gt;&lt;th&gt;Conn&lt;/th&gt;&lt;td&gt;Kilobytes transferred this connection&lt;/td&gt;&lt;/tr&gt;<font></font>
+ &lt;tr&gt;&lt;th&gt;Child&lt;/th&gt;&lt;td&gt;Megabytes transferred this child&lt;/td&gt;&lt;/tr&gt;<font></font>
+ &lt;tr&gt;&lt;th&gt;Slot&lt;/th&gt;&lt;td&gt;Total megabytes transferred this slot&lt;/td&gt;&lt;/tr&gt;<font></font>
+ &lt;/table&gt;<font></font>
+&lt;hr&gt;<font></font>
+&lt;table cellspacing=0 cellpadding=0&gt;<font></font>
+&lt;tr&gt;&lt;td bgcolor="#000000"&gt;<font></font>
+&lt;b&gt;&lt;font color="#ffffff" face="Arial,Helvetica"&gt;SSL/TLS Session Cache Status:&lt;/font&gt;&lt;/b&gt;<font></font>
+&lt;/td&gt;&lt;/tr&gt;<font></font>
+&lt;tr&gt;&lt;td bgcolor="#ffffff"&gt;<font></font>
+cache type: &lt;b&gt;SHMCB&lt;/b&gt;, shared memory: &lt;b&gt;512000&lt;/b&gt; bytes, current entries: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;subcaches: &lt;b&gt;32&lt;/b&gt;, indexes per subcache: &lt;b&gt;88&lt;/b&gt;&lt;br&gt;index usage: &lt;b&gt;0%&lt;/b&gt;, cache usage: &lt;b&gt;0%&lt;/b&gt;&lt;br&gt;total entries stored since starting: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;total entries replaced since starting: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;total entries expired since starting: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;total (pre-expiry) entries scrolled out of the cache: &lt;b&gt;0&lt;/b&gt;&lt;br&gt;total retrieves since starting: &lt;b&gt;0&lt;/b&gt; hit, &lt;b&gt;0&lt;/b&gt; miss&lt;br&gt;total removes since starting: &lt;b&gt;0&lt;/b&gt; hit, &lt;b&gt;0&lt;/b&gt; miss&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;<font></font>
+&lt;/table&gt;<font></font>
+&lt;hr /&gt;<font></font>
+&lt;address&gt;Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.0.28 Server at localhost Port 80&lt;/address&gt;<font></font>
+&lt;/body&gt;&lt;/html&gt;<font></font>
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Evidencia</font></font></th>
+		<td><pre><code>HTTP/1.1 200 OK</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Solución</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Considere si el componente es realmente necesario en producción o no; si no es así, desactívelo. </font><font style="vertical-align: inherit;">Si es así, garantizar que el acceso requiera autenticación y autorización adecuadas, o limitar la exposición a sistemas internos o IP de origen específicas, etc.</font></font></p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-2">
+					<h3>
+						<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Riesgo</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Medio</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , </font></font><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Confianza</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="confidence-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Media </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(1)</font></font></span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://localhost </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(1)</font></font></span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Falta el encabezado anti-clickjacking </font></font></a> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(1)</font></font></span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OBTENER http://localhost/AlertMed/sistema/</font></font></span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Etiquetas de alerta</font></font></th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OWASP_2021_A05</font></font></a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">WSTG-v42-CLNT-09</font></font></a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OWASP_2017_A06</font></font></a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Descripción de la alerta</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">La respuesta no incluye ni la Política de seguridad de contenido con la directiva 'ancestros del marco' ni las Opciones de marco X para proteger contra ataques de 'ClickJacking'.</font></font></p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pedido</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de solicitud y sección de encabezado (236 bytes)</font></font></summary>
+				
+				<pre><code>GET http://localhost/AlertMed/sistema/ HTTP/1.1<font></font>
+host: localhost<font></font>
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36<font></font>
+pragma: no-cache<font></font>
+cache-control: no-cache<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de la solicitud (0 bytes)</font></font></summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Respuesta</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de estado y sección de encabezado (311 bytes)</font></font></summary>
+				
+				<pre><code>HTTP/1.1 200 OK<font></font>
+Date: Mon, 20 Nov 2023 00:23:54 GMT<font></font>
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.0.28<font></font>
+X-Powered-By: PHP/8.0.28<font></font>
+Expires: Thu, 19 Nov 1981 08:52:00 GMT<font></font>
+Cache-Control: no-store, no-cache, must-revalidate<font></font>
+Pragma: no-cache<font></font>
+Content-Length: 1682<font></font>
+Content-Type: text/html; charset=UTF-8<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de respuesta (1682 bytes)</font></font></summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;<font></font>
+&lt;html lang="es"&gt;<font></font>
+<font></font>
+&lt;head&gt;<font></font>
+  &lt;meta charset="UTF-8"&gt;<font></font>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<font></font>
+  &lt;title&gt;AlertMed&lt;/title&gt;<font></font>
+  &lt;link rel="icon" href="img/icon.ico"&gt;<font></font>
+  &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"<font></font>
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"&gt;<font></font>
+  &lt;link rel="stylesheet" href="css/style.css"&gt;<font></font>
+&lt;/head&gt;<font></font>
+<font></font>
+&lt;body&gt;<font></font>
+  &lt;form id="formulario_login" method="post"&gt;<font></font>
+    &lt;div class="login"&gt;<font></font>
+      &lt;div class="login-box"&gt;<font></font>
+        &lt;div class="form-login"&gt;<font></font>
+          &lt;div class="title-login"&gt;<font></font>
+            &lt;h1&gt;Inicio de sesión&lt;/h1&gt;<font></font>
+            &lt;div class="icon"&gt;<font></font>
+              &lt;img src="img/icon.ico" alt="Logo hospital de melipilla" id="logo-login"&gt;<font></font>
+            &lt;/div&gt;<font></font>
+          &lt;/div&gt;<font></font>
+          &lt;label for=""&gt;Rut: &lt;/label&gt;<font></font>
+          &lt;input type="text" class="form-control" name="rut" id="rut" placeholder="Rut de ejemplo: 11111111-1"<font></font>
+            value=""&gt;<font></font>
+          &lt;small id="helpId" class="form-text text-muted"&gt;Introduzca su rut&lt;/small&gt;<font></font>
+          &lt;label for=""&gt;Contraseña: &lt;/label&gt;<font></font>
+          &lt;input type="password" class="form-control" name="clave" id="clave" placeholder=""&gt;<font></font>
+          &lt;small id="helpId" class="form-text text-muted"&gt;Introduzca su contraseña&lt;/small&gt;<font></font>
+          &lt;br&gt;<font></font>
+          &lt;input type="submit" name="btningresar" class="btn btn-primary" id="btningresar" value="Iniciar Sesión"<font></font>
+            onclick="return validarFormulario();"&gt;<font></font>
+          &lt;div id="alert"&gt;<font></font>
+            <font></font>
+          &lt;/div&gt;<font></font>
+        &lt;/div&gt;<font></font>
+      &lt;/div&gt;<font></font>
+    &lt;/div&gt;<font></font>
+  &lt;/form&gt;<font></font>
+  &lt;script src="js/validaciones.js"&gt;&lt;/script&gt;<font></font>
+&lt;/body&gt;<font></font>
+<font></font>
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Parámetro</font></font></th>
+		<td><pre><code>x-frame-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Solución</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Los navegadores web modernos admiten los encabezados HTTP Content-Security-Policy y X-Frame-Options. </font><font style="vertical-align: inherit;">Asegúrese de que uno de ellos esté configurado en todas las páginas web devueltas por su sitio/aplicación.</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Si espera que la página esté enmarcada sólo por páginas en su servidor (por ejemplo, es parte de un FRAMESET), entonces querrá usar SAMEORIGIN; de lo contrario, si nunca espera que la página esté enmarcada, debe usar DENY. </font><font style="vertical-align: inherit;">Alternativamente, considere implementar la directiva "antepasados ​​del marco" de la Política de seguridad de contenido.</font></font></p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-1">
+					<h3>
+						<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Riesgo</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Medio</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , </font></font><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Confianza</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="confidence-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Baja </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(1)</font></font></span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://localhost </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(1)</font></font></span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ausencia de tokens Anti-CSRF </font></font></a> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(1)</font></font></span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OBTENER http://localhost/AlertMed/sistema/</font></font></span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Etiquetas de alerta</font></font></th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OWASP_2021_A01</font></font></a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/05-Testing_for_Cross_Site_Request_Forgery"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">WSTG-v42-SESS-05</font></font></a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OWASP_2017_A05</font></font></a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Descripción de la alerta</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">No se encontraron tokens Anti-CSRF en un formulario de envío HTML.</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Una falsificación de solicitud entre sitios es un ataque que implica obligar a una víctima a enviar una solicitud HTTP a un destino objetivo sin su conocimiento o intención para realizar una acción como víctima. </font><font style="vertical-align: inherit;">La causa subyacente es la funcionalidad de la aplicación que utiliza acciones de formulario/URL predecibles de forma repetible. </font><font style="vertical-align: inherit;">La naturaleza del ataque es que CSRF explota la confianza que un sitio web tiene para un usuario. </font><font style="vertical-align: inherit;">Por el contrario, los scripts entre sitios (XSS) explotan la confianza que un usuario tiene en un sitio web. </font><font style="vertical-align: inherit;">Al igual que XSS, los ataques CSRF no son necesariamente entre sitios, pero pueden serlo. </font><font style="vertical-align: inherit;">La falsificación de solicitudes entre sitios también se conoce como CSRF, XSRF, ataque con un solo clic, sesión de conducción, ayudante confundido y surf en el mar.</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Los ataques CSRF son efectivos en varias situaciones, que incluyen:</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">    * La víctima tiene una sesión activa en el sitio de destino.</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">    * La víctima se autentica mediante autenticación HTTP en el sitio de destino.</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">    * La víctima está en la misma red local que el sitio de destino.</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CSRF se ha utilizado principalmente para realizar una acción contra un sitio objetivo utilizando los privilegios de la víctima, pero se han descubierto técnicas recientes para revelar información al obtener acceso a la respuesta. </font><font style="vertical-align: inherit;">El riesgo de divulgación de información aumenta dramáticamente cuando el sitio objetivo es vulnerable a XSS, porque XSS puede usarse como plataforma para CSRF, permitiendo que el ataque opere dentro de los límites de la política del mismo origen.</font></font></p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Otra información</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">No se encontró ningún token Anti-CSRF conocido [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] en el siguiente formulario HTML: [Formulario 1: "btningresar" "clave" "rutina"].</font></font></p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pedido</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de solicitud y sección de encabezado (236 bytes)</font></font></summary>
+				
+				<pre><code>GET http://localhost/AlertMed/sistema/ HTTP/1.1<font></font>
+host: localhost<font></font>
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36<font></font>
+pragma: no-cache<font></font>
+cache-control: no-cache<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de la solicitud (0 bytes)</font></font></summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Respuesta</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de estado y sección de encabezado (311 bytes)</font></font></summary>
+				
+				<pre><code>HTTP/1.1 200 OK<font></font>
+Date: Mon, 20 Nov 2023 00:23:54 GMT<font></font>
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.0.28<font></font>
+X-Powered-By: PHP/8.0.28<font></font>
+Expires: Thu, 19 Nov 1981 08:52:00 GMT<font></font>
+Cache-Control: no-store, no-cache, must-revalidate<font></font>
+Pragma: no-cache<font></font>
+Content-Length: 1682<font></font>
+Content-Type: text/html; charset=UTF-8<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de respuesta (1682 bytes)</font></font></summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;<font></font>
+&lt;html lang="es"&gt;<font></font>
+<font></font>
+&lt;head&gt;<font></font>
+  &lt;meta charset="UTF-8"&gt;<font></font>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<font></font>
+  &lt;title&gt;AlertMed&lt;/title&gt;<font></font>
+  &lt;link rel="icon" href="img/icon.ico"&gt;<font></font>
+  &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"<font></font>
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"&gt;<font></font>
+  &lt;link rel="stylesheet" href="css/style.css"&gt;<font></font>
+&lt;/head&gt;<font></font>
+<font></font>
+&lt;body&gt;<font></font>
+  &lt;form id="formulario_login" method="post"&gt;<font></font>
+    &lt;div class="login"&gt;<font></font>
+      &lt;div class="login-box"&gt;<font></font>
+        &lt;div class="form-login"&gt;<font></font>
+          &lt;div class="title-login"&gt;<font></font>
+            &lt;h1&gt;Inicio de sesión&lt;/h1&gt;<font></font>
+            &lt;div class="icon"&gt;<font></font>
+              &lt;img src="img/icon.ico" alt="Logo hospital de melipilla" id="logo-login"&gt;<font></font>
+            &lt;/div&gt;<font></font>
+          &lt;/div&gt;<font></font>
+          &lt;label for=""&gt;Rut: &lt;/label&gt;<font></font>
+          &lt;input type="text" class="form-control" name="rut" id="rut" placeholder="Rut de ejemplo: 11111111-1"<font></font>
+            value=""&gt;<font></font>
+          &lt;small id="helpId" class="form-text text-muted"&gt;Introduzca su rut&lt;/small&gt;<font></font>
+          &lt;label for=""&gt;Contraseña: &lt;/label&gt;<font></font>
+          &lt;input type="password" class="form-control" name="clave" id="clave" placeholder=""&gt;<font></font>
+          &lt;small id="helpId" class="form-text text-muted"&gt;Introduzca su contraseña&lt;/small&gt;<font></font>
+          &lt;br&gt;<font></font>
+          &lt;input type="submit" name="btningresar" class="btn btn-primary" id="btningresar" value="Iniciar Sesión"<font></font>
+            onclick="return validarFormulario();"&gt;<font></font>
+          &lt;div id="alert"&gt;<font></font>
+            <font></font>
+          &lt;/div&gt;<font></font>
+        &lt;/div&gt;<font></font>
+      &lt;/div&gt;<font></font>
+    &lt;/div&gt;<font></font>
+  &lt;/form&gt;<font></font>
+  &lt;script src="js/validaciones.js"&gt;&lt;/script&gt;<font></font>
+&lt;/body&gt;<font></font>
+<font></font>
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Evidencia</font></font></th>
+		<td><pre><code>&lt;form id="formulario_login" method="post"&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Solución</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fase: Arquitectura y Diseño</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Utilice una biblioteca o un marco examinado que no permita que se produzca esta debilidad o que proporcione estructuras que hagan que esta debilidad sea más fácil de evitar.</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Por ejemplo, utilice paquetes anti-CSRF como OWASP CSRFGuard.</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fase: Implementación</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Asegúrese de que su aplicación esté libre de problemas de secuencias de comandos entre sitios, porque la mayoría de las defensas CSRF se pueden eludir utilizando secuencias de comandos controladas por atacantes.</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fase: Arquitectura y Diseño</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Genere un nonce único para cada formulario, coloque el nonce en el formulario y verifique el nonce al recibir el formulario. </font><font style="vertical-align: inherit;">Asegúrese de que el nonce no sea predecible (CWE-330).</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tenga en cuenta que esto se puede evitar utilizando XSS.</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Identificar operaciones especialmente peligrosas. </font><font style="vertical-align: inherit;">Cuando el usuario realiza una operación peligrosa, envíe una solicitud de confirmación por separado para garantizar que el usuario tenía la intención de realizar esa operación.</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tenga en cuenta que esto se puede evitar utilizando XSS.</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Utilice el control de gestión de sesiones de ESAPI.</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Este control incluye un componente para CSRF.</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">No utilice el método GET para ninguna solicitud que desencadene un cambio de estado.</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fase: Implementación</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Verifique el encabezado HTTP Referer para ver si la solicitud se originó en una página esperada. </font><font style="vertical-align: inherit;">Esto podría romper la funcionalidad legítima, porque los usuarios o los representantes pueden haber desactivado el envío del Referer por razones de privacidad.</font></font></p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+				 
+				
+				
+				<li id="alerts--risk-1-confidence-3">
+					<h3>
+						<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Riesgo</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bajo</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , </font></font><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Confianza</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="confidence-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Alta </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(1)</font></font></span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://localhost </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(1)</font></font></span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-7"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">El servidor filtra información de la versión a través del campo de encabezado de respuesta HTTP "Servidor" </font></font></a> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(1)</font></font></span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OBTENER http://localhost/sitemap.xml</font></font></span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Etiquetas de alerta</font></font></th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OWASP_2021_A05</font></font></a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OWASP_2017_A06</font></font></a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">WSTG-v42-INFO-02</font></font></a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Descripción de la alerta</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">El servidor web/de aplicaciones está filtrando información de la versión a través del encabezado de respuesta HTTP "Servidor". </font><font style="vertical-align: inherit;">El acceso a dicha información puede facilitar que los atacantes identifiquen otras vulnerabilidades a las que está sujeto su servidor web/aplicaciones.</font></font></p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pedido</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de solicitud y sección de encabezado (230 bytes)</font></font></summary>
+				
+				<pre><code>GET http://localhost/sitemap.xml HTTP/1.1<font></font>
+host: localhost<font></font>
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36<font></font>
+pragma: no-cache<font></font>
+cache-control: no-cache<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de la solicitud (0 bytes)</font></font></summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Respuesta</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de estado y sección de encabezado (186 bytes)</font></font></summary>
+				
+				<pre><code>HTTP/1.1 404 Not Found<font></font>
+Date: Mon, 20 Nov 2023 00:23:54 GMT<font></font>
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.0.28<font></font>
+Content-Length: 296<font></font>
+Content-Type: text/html; charset=iso-8859-1<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de respuesta (296 bytes)</font></font></summary>
+				
+				<pre><code>&lt;!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"&gt;<font></font>
+&lt;html&gt;&lt;head&gt;<font></font>
+&lt;title&gt;404 Not Found&lt;/title&gt;<font></font>
+&lt;/head&gt;&lt;body&gt;<font></font>
+&lt;h1&gt;Not Found&lt;/h1&gt;<font></font>
+&lt;p&gt;The requested URL was not found on this server.&lt;/p&gt;<font></font>
+&lt;hr&gt;<font></font>
+&lt;address&gt;Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.0.28 Server at localhost Port 80&lt;/address&gt;<font></font>
+&lt;/body&gt;&lt;/html&gt;<font></font>
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Evidencia</font></font></th>
+		<td><pre><code>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.0.28</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Solución</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Asegúrese de que su servidor web, servidor de aplicaciones, equilibrador de carga, etc. esté configurado para suprimir el encabezado "Servidor" o proporcionar detalles genéricos.</font></font></p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Riesgo</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bajo</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , </font></font><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Confianza</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="confidence-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Media </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(4)</font></font></span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://localhost </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(4)</font></font></span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cookie sin bandera HttpOnly </font></font></a> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(1)</font></font></span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OBTENER http://localhost/AlertMed/sistema/</font></font></span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Etiquetas de alerta</font></font></th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OWASP_2021_A05</font></font></a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">WSTG-v42-SESS-02</font></font></a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OWASP_2017_A06</font></font></a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Descripción de la alerta</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Se ha configurado una cookie sin el indicador HttpOnly, lo que significa que se puede acceder a la cookie mediante JavaScript. </font><font style="vertical-align: inherit;">Si se puede ejecutar un script malicioso en esta página, se podrá acceder a la cookie y podrá transmitirse a otro sitio. </font><font style="vertical-align: inherit;">Si se trata de una cookie de sesión, es posible que se produzca un secuestro de sesión.</font></font></p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pedido</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de solicitud y sección de encabezado (236 bytes)</font></font></summary>
+				
+				<pre><code>GET http://localhost/AlertMed/sistema/ HTTP/1.1<font></font>
+host: localhost<font></font>
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36<font></font>
+pragma: no-cache<font></font>
+cache-control: no-cache<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de la solicitud (0 bytes)</font></font></summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Respuesta</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de estado y sección de encabezado (384 bytes)</font></font></summary>
+				
+				<pre><code>HTTP/1.1 302 Found<font></font>
+Date: Mon, 20 Nov 2023 00:23:54 GMT<font></font>
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.0.28<font></font>
+X-Powered-By: PHP/8.0.28<font></font>
+Set-Cookie: PHPSESSID=t7n20iq8vespitkahskq1s1ojm; path=/<font></font>
+Expires: Thu, 19 Nov 1981 08:52:00 GMT<font></font>
+Cache-Control: no-store, no-cache, must-revalidate<font></font>
+Pragma: no-cache<font></font>
+Location: ../<font></font>
+Content-Length: 0<font></font>
+Content-Type: text/html; charset=UTF-8<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de respuesta (0 bytes)</font></font></summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Parámetro</font></font></th>
+		<td><pre><code>PHPSESSID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Evidencia</font></font></th>
+		<td><pre><code>Set-Cookie: PHPSESSID</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Solución</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Asegúrese de que el indicador HttpOnly esté configurado para todas las cookies.</font></font></p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cookie sin atributo SameSite </font></font></a> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(1)</font></font></span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OBTENER http://localhost/AlertMed/sistema/</font></font></span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Etiquetas de alerta</font></font></th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OWASP_2021_A01</font></font></a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">WSTG-v42-SESS-02</font></font></a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OWASP_2017_A05</font></font></a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Descripción de la alerta</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Se ha configurado una cookie sin el atributo SameSite, lo que significa que la cookie se puede enviar como resultado de una solicitud "entre sitios". </font><font style="vertical-align: inherit;">El atributo SameSite es una contramedida eficaz contra la falsificación de solicitudes entre sitios, la inclusión de secuencias de comandos entre sitios y los ataques de sincronización.</font></font></p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pedido</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de solicitud y sección de encabezado (236 bytes)</font></font></summary>
+				
+				<pre><code>GET http://localhost/AlertMed/sistema/ HTTP/1.1<font></font>
+host: localhost<font></font>
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36<font></font>
+pragma: no-cache<font></font>
+cache-control: no-cache<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de la solicitud (0 bytes)</font></font></summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Respuesta</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de estado y sección de encabezado (384 bytes)</font></font></summary>
+				
+				<pre><code>HTTP/1.1 302 Found<font></font>
+Date: Mon, 20 Nov 2023 00:23:54 GMT<font></font>
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.0.28<font></font>
+X-Powered-By: PHP/8.0.28<font></font>
+Set-Cookie: PHPSESSID=t7n20iq8vespitkahskq1s1ojm; path=/<font></font>
+Expires: Thu, 19 Nov 1981 08:52:00 GMT<font></font>
+Cache-Control: no-store, no-cache, must-revalidate<font></font>
+Pragma: no-cache<font></font>
+Location: ../<font></font>
+Content-Length: 0<font></font>
+Content-Type: text/html; charset=UTF-8<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de respuesta (0 bytes)</font></font></summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Parámetro</font></font></th>
+		<td><pre><code>PHPSESSID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Evidencia</font></font></th>
+		<td><pre><code>Set-Cookie: PHPSESSID</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Solución</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Asegúrese de que el atributo SameSite esté configurado en "laxo" o, idealmente, "estricto" para todas las cookies.</font></font></p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-6"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">El servidor filtra información a través de los campos de encabezado de respuesta HTTP "X-Powered-By" </font></font></a> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(1)</font></font></span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OBTENER http://localhost/AlertMed/sistema/</font></font></span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Etiquetas de alerta</font></font></th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OWASP_2021_A01</font></font></a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">WSTG-v42-INFO-08</font></font></a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OWASP_2017_A03</font></font></a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Descripción de la alerta</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">El servidor web/de aplicaciones está filtrando información a través de uno o más encabezados de respuesta HTTP "X-Powered-By". </font><font style="vertical-align: inherit;">El acceso a dicha información puede facilitar que los atacantes identifiquen otros marcos/componentes de los que depende su aplicación web y las vulnerabilidades a las que dichos componentes pueden estar sujetos.</font></font></p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pedido</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de solicitud y sección de encabezado (236 bytes)</font></font></summary>
+				
+				<pre><code>GET http://localhost/AlertMed/sistema/ HTTP/1.1<font></font>
+host: localhost<font></font>
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36<font></font>
+pragma: no-cache<font></font>
+cache-control: no-cache<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de la solicitud (0 bytes)</font></font></summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Respuesta</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de estado y sección de encabezado (384 bytes)</font></font></summary>
+				
+				<pre><code>HTTP/1.1 302 Found<font></font>
+Date: Mon, 20 Nov 2023 00:23:54 GMT<font></font>
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.0.28<font></font>
+X-Powered-By: PHP/8.0.28<font></font>
+Set-Cookie: PHPSESSID=t7n20iq8vespitkahskq1s1ojm; path=/<font></font>
+Expires: Thu, 19 Nov 1981 08:52:00 GMT<font></font>
+Cache-Control: no-store, no-cache, must-revalidate<font></font>
+Pragma: no-cache<font></font>
+Location: ../<font></font>
+Content-Length: 0<font></font>
+Content-Type: text/html; charset=UTF-8<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de respuesta (0 bytes)</font></font></summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Evidencia</font></font></th>
+		<td><pre><code>X-Powered-By: PHP/8.0.28</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Solución</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Asegúrese de que su servidor web, servidor de aplicaciones, equilibrador de carga, etc. esté configurado para suprimir los encabezados "X-Powered-By".</font></font></p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-8"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Falta el encabezado X-Content-Type-Options </font></font></a> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(1)</font></font></span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OBTENER http://localhost/AlertMed/css/style.css</font></font></span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Etiquetas de alerta</font></font></th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OWASP_2021_A05</font></font></a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OWASP_2017_A06</font></font></a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Descripción de la alerta</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">El encabezado Anti-MIME-Sniffing X-Content-Type-Options no estaba configurado en 'nosniff'. </font><font style="vertical-align: inherit;">Esto permite que las versiones anteriores de Internet Explorer y Chrome realicen un rastreo MIME en el cuerpo de la respuesta, lo que potencialmente hace que el cuerpo de la respuesta se interprete y se muestre como un tipo de contenido distinto del tipo de contenido declarado. </font><font style="vertical-align: inherit;">Las versiones actuales (principios de 2014) y heredadas de Firefox utilizarán el tipo de contenido declarado (si está configurado), en lugar de realizar un rastreo MIME.</font></font></p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Otra información</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Este problema todavía se aplica a las páginas de tipo de error (401, 403, 500, etc.), ya que esas páginas a menudo todavía se ven afectadas por problemas de inyección, en cuyo caso todavía existe la preocupación de que los navegadores detecten páginas que no corresponden a su tipo de contenido real.</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">En el umbral "Alto", esta regla de análisis no alertará sobre respuestas de error del cliente o del servidor.</font></font></p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pedido</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de solicitud y sección de encabezado (324 bytes)</font></font></summary>
+				
+				<pre><code>GET http://localhost/AlertMed/css/style.css HTTP/1.1<font></font>
+host: localhost<font></font>
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36<font></font>
+pragma: no-cache<font></font>
+cache-control: no-cache<font></font>
+referer: http://localhost/AlertMed/<font></font>
+Cookie: PHPSESSID=t7n20iq8vespitkahskq1s1ojm<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de la solicitud (0 bytes)</font></font></summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Respuesta</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de estado y sección de encabezado (254 bytes)</font></font></summary>
+				
+				<pre><code>HTTP/1.1 200 OK<font></font>
+Date: Mon, 20 Nov 2023 00:23:54 GMT<font></font>
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.0.28<font></font>
+Last-Modified: Fri, 17 Nov 2023 05:07:57 GMT<font></font>
+ETag: "944-60a521e9f5925"<font></font>
+Accept-Ranges: bytes<font></font>
+Content-Length: 2372<font></font>
+Content-Type: text/css<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de respuesta (2372 bytes)</font></font></summary>
+				
+				<pre><code>body {<font></font>
+  overflow-y: hidden;<font></font>
+  <font></font>
+<font></font>
+}<font></font>
+<font></font>
+@media (max-width: 999px) {<font></font>
+  body {<font></font>
+    overflow-y: scroll;<font></font>
+  }<font></font>
+}<font></font>
+<font></font>
+/* Home */<font></font>
+<font></font>
+.cuerpo-index {<font></font>
+  display: flex;<font></font>
+  min-height: 100vh;<font></font>
+  background-color: #eeeff4;<font></font>
+  padding-top: 50px;<font></font>
+}<font></font>
+<font></font>
+<font></font>
+#cards {<font></font>
+  background-color: #ffffff;<font></font>
+  height: 60vh;<font></font>
+  margin: 10px;<font></font>
+  box-shadow: 0px 0px 10px 0px #bbbbbb;<font></font>
+  border-radius: 10px;<font></font>
+  padding: 30px;<font></font>
+  overflow-y: auto;<font></font>
+  .img{<font></font>
+    width: 30px;<font></font>
+  }<font></font>
+}<font></font>
+<font></font>
+.estado{<font></font>
+  display: flex;<font></font>
+  justify-content: space-around;<font></font>
+  align-items: center;<font></font>
+  padding: 2px;<font></font>
+<font></font>
+}<font></font>
+.estado li{<font></font>
+  list-style-type: none;<font></font>
+  min-width: 248px;<font></font>
+}<font></font>
+<font></font>
+.navbar-light,<font></font>
+.navbar-nav,<font></font>
+.nav-link {<font></font>
+  color: #000;<font></font>
+}<font></font>
+<font></font>
+#Logo {<font></font>
+  mix-blend-mode: multiply;<font></font>
+  filter: brightness(1.1);<font></font>
+}<font></font>
+<font></font>
+ol {<font></font>
+  list-style-type: none;<font></font>
+  margin-left: 20px;<font></font>
+}<font></font>
+<font></font>
+.lista-personal,<font></font>
+.equipo-clave,<font></font>
+.form-incidentes {<font></font>
+  margin-top: 2rem;<font></font>
+  gap: 1rem;<font></font>
+}<font></font>
+<font></font>
+<font></font>
+<font></font>
+#btn_registro{<font></font>
+  width: 100%;<font></font>
+  margin-top: 10px;<font></font>
+}<font></font>
+<font></font>
+.title-login{<font></font>
+  text-align: center;<font></font>
+  margin-bottom: 20px;<font></font>
+  font-size: 1.5rem;<font></font>
+  font-weight: 600;<font></font>
+  color: #000;<font></font>
+  top: 0;<font></font>
+}<font></font>
+<font></font>
+.titulo-cards{<font></font>
+  display: flex;<font></font>
+  text-align: center;<font></font>
+  min-width: 248px;<font></font>
+  justify-content: space-evenly;<font></font>
+}<font></font>
+h4{<font></font>
+  text-align: center;<font></font>
+}<font></font>
+<font></font>
+.btnrefresh{<font></font>
+  background-color: #fff;<font></font>
+  border: none;<font></font>
+  cursor: pointer;<font></font>
+  width: 30;<font></font>
+}<font></font>
+.btnrefresh:hover{<font></font>
+  background-color: #e9ecef;<font></font>
+  border-radius: 50%;<font></font>
+}<font></font>
+<font></font>
+<font></font>
+<font></font>
+/* Home */<font></font>
+<font></font>
+/* Login */<font></font>
+<font></font>
+.login{<font></font>
+  display: flex;<font></font>
+  flex-direction: column;<font></font>
+  justify-content: center;<font></font>
+  height: 100vh;<font></font>
+  background-image: url('../img/fondo.page1.jpg'); <font></font>
+  background-size: cover;<font></font>
+  background-repeat: no-repeat;<font></font>
+  background-attachment: fixed;<font></font>
+}<font></font>
+<font></font>
+<font></font>
+.login-box{<font></font>
+  display: flex;<font></font>
+  color: black;<font></font>
+  flex-direction: column;<font></font>
+  text-align: start;<font></font>
+  align-items: center;<font></font>
+}<font></font>
+<font></font>
+.form-login{<font></font>
+  display: flex;<font></font>
+  flex-direction: column;<font></font>
+  text-align: start;<font></font>
+  width: 380px;<font></font>
+  height: 480px;<font></font>
+  padding: 30px;<font></font>
+  border: 1px solid #ccc;<font></font>
+  border-radius: 10px;<font></font>
+  background-color: #fff;<font></font>
+  box-shadow: 0px 0px 10px 0px #bbbbbb;  <font></font>
+}<font></font>
+<font></font>
+<font></font>
+#alert{<font></font>
+  display: flex;<font></font>
+  flex-direction: column;<font></font>
+  text-align: start;<font></font>
+  border-radius: 10px;<font></font>
+  padding: 10px;<font></font>
+}<font></font>
+<font></font>
+<font></font>
+.icon{<font></font>
+  display: flex;<font></font>
+  justify-content: center;<font></font>
+  align-items: center;<font></font>
+}<font></font>
+<font></font>
+#logo-login{<font></font>
+  width: 30px;<font></font>
+}<font></font>
+/* Login */<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Parámetro</font></font></th>
+		<td><pre><code>x-content-type-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Solución</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Asegúrese de que la aplicación/servidor web configure el encabezado Content-Type de manera adecuada y que establezca el encabezado X-Content-Type-Options en 'nosniff' para todas las páginas web.</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Si es posible, asegúrese de que el usuario final utilice un navegador web moderno y compatible con los estándares que no realice ningún rastreo MIME, o que la aplicación web/servidor web pueda indicarle que no realice el rastreo MIME.</font></font></p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Riesgo</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Informativo</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , </font></font><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Confianza</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="confidence-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Medio </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(3)</font></font></span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://localhost </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(3)</font></font></span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-10"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aplicación web moderna </font></font></a> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(1)</font></font></span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OBTENER http://localhost/AlertMed/sistema/</font></font></span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Etiquetas de alerta</font></font></th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Descripción de la alerta</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">La aplicación parece ser una aplicación web moderna. </font><font style="vertical-align: inherit;">Si necesita explorarlo automáticamente, entonces el Ajax Spider puede ser más efectivo que el estándar.</font></font></p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Otra información</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">No se han encontrado enlaces mientras existen scripts, lo que es una indicación de que se trata de una aplicación web moderna.</font></font></p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pedido</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de solicitud y sección de encabezado (236 bytes)</font></font></summary>
+				
+				<pre><code>GET http://localhost/AlertMed/sistema/ HTTP/1.1<font></font>
+host: localhost<font></font>
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36<font></font>
+pragma: no-cache<font></font>
+cache-control: no-cache<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de la solicitud (0 bytes)</font></font></summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Respuesta</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de estado y sección de encabezado (311 bytes)</font></font></summary>
+				
+				<pre><code>HTTP/1.1 200 OK<font></font>
+Date: Mon, 20 Nov 2023 00:23:54 GMT<font></font>
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.0.28<font></font>
+X-Powered-By: PHP/8.0.28<font></font>
+Expires: Thu, 19 Nov 1981 08:52:00 GMT<font></font>
+Cache-Control: no-store, no-cache, must-revalidate<font></font>
+Pragma: no-cache<font></font>
+Content-Length: 1682<font></font>
+Content-Type: text/html; charset=UTF-8<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de respuesta (1682 bytes)</font></font></summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;<font></font>
+&lt;html lang="es"&gt;<font></font>
+<font></font>
+&lt;head&gt;<font></font>
+  &lt;meta charset="UTF-8"&gt;<font></font>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<font></font>
+  &lt;title&gt;AlertMed&lt;/title&gt;<font></font>
+  &lt;link rel="icon" href="img/icon.ico"&gt;<font></font>
+  &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"<font></font>
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"&gt;<font></font>
+  &lt;link rel="stylesheet" href="css/style.css"&gt;<font></font>
+&lt;/head&gt;<font></font>
+<font></font>
+&lt;body&gt;<font></font>
+  &lt;form id="formulario_login" method="post"&gt;<font></font>
+    &lt;div class="login"&gt;<font></font>
+      &lt;div class="login-box"&gt;<font></font>
+        &lt;div class="form-login"&gt;<font></font>
+          &lt;div class="title-login"&gt;<font></font>
+            &lt;h1&gt;Inicio de sesión&lt;/h1&gt;<font></font>
+            &lt;div class="icon"&gt;<font></font>
+              &lt;img src="img/icon.ico" alt="Logo hospital de melipilla" id="logo-login"&gt;<font></font>
+            &lt;/div&gt;<font></font>
+          &lt;/div&gt;<font></font>
+          &lt;label for=""&gt;Rut: &lt;/label&gt;<font></font>
+          &lt;input type="text" class="form-control" name="rut" id="rut" placeholder="Rut de ejemplo: 11111111-1"<font></font>
+            value=""&gt;<font></font>
+          &lt;small id="helpId" class="form-text text-muted"&gt;Introduzca su rut&lt;/small&gt;<font></font>
+          &lt;label for=""&gt;Contraseña: &lt;/label&gt;<font></font>
+          &lt;input type="password" class="form-control" name="clave" id="clave" placeholder=""&gt;<font></font>
+          &lt;small id="helpId" class="form-text text-muted"&gt;Introduzca su contraseña&lt;/small&gt;<font></font>
+          &lt;br&gt;<font></font>
+          &lt;input type="submit" name="btningresar" class="btn btn-primary" id="btningresar" value="Iniciar Sesión"<font></font>
+            onclick="return validarFormulario();"&gt;<font></font>
+          &lt;div id="alert"&gt;<font></font>
+            <font></font>
+          &lt;/div&gt;<font></font>
+        &lt;/div&gt;<font></font>
+      &lt;/div&gt;<font></font>
+    &lt;/div&gt;<font></font>
+  &lt;/form&gt;<font></font>
+  &lt;script src="js/validaciones.js"&gt;&lt;/script&gt;<font></font>
+&lt;/body&gt;<font></font>
+<font></font>
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Evidencia</font></font></th>
+		<td><pre><code>&lt;script src="js/validaciones.js"&gt;&lt;/script&gt;</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Solución</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta es una alerta informativa y por lo tanto no se requieren cambios.</font></font></p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-11"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Respuesta de gestión de sesión identificada </font></font></a> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(1)</font></font></span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OBTENER http://localhost/AlertMed/sistema/</font></font></span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Etiquetas de alerta</font></font></th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Descripción de la alerta</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Se ha identificado que la respuesta proporcionada contiene un token de gestión de sesión. </font><font style="vertical-align: inherit;">El campo 'Otra información' contiene un conjunto de tokens de encabezado que se pueden utilizar en el método de gestión de sesiones basado en encabezados. </font><font style="vertical-align: inherit;">Si la solicitud se encuentra en un contexto que tiene un método de administración de sesión configurado en "Detección automática", esta regla cambiará la administración de la sesión para usar los tokens identificados.</font></font></p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Otra información</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">cookie:PHPSESSID</font></font></p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pedido</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de solicitud y sección de encabezado (236 bytes)</font></font></summary>
+				
+				<pre><code>GET http://localhost/AlertMed/sistema/ HTTP/1.1<font></font>
+host: localhost<font></font>
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36<font></font>
+pragma: no-cache<font></font>
+cache-control: no-cache<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de la solicitud (0 bytes)</font></font></summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Respuesta</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de estado y sección de encabezado (384 bytes)</font></font></summary>
+				
+				<pre><code>HTTP/1.1 302 Found<font></font>
+Date: Mon, 20 Nov 2023 00:23:54 GMT<font></font>
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.0.28<font></font>
+X-Powered-By: PHP/8.0.28<font></font>
+Set-Cookie: PHPSESSID=t7n20iq8vespitkahskq1s1ojm; path=/<font></font>
+Expires: Thu, 19 Nov 1981 08:52:00 GMT<font></font>
+Cache-Control: no-store, no-cache, must-revalidate<font></font>
+Pragma: no-cache<font></font>
+Location: ../<font></font>
+Content-Length: 0<font></font>
+Content-Type: text/html; charset=UTF-8<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de respuesta (0 bytes)</font></font></summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Parámetro</font></font></th>
+		<td><pre><code>PHPSESSID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Evidencia</font></font></th>
+		<td><pre><code>t7n20iq8vespitkahskq1s1ojm</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Solución</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Se trata de una alerta informativa más que de una vulnerabilidad, por lo que no hay nada que solucionar.</font></font></p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-12"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Agente de usuario Fuzzer </font></font></a> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(1)</font></font></span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OBTENER http://localhost/AlertMed/sistema</font></font></span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Etiquetas de alerta</font></font></th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Descripción de la alerta</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Verifique las diferencias en la respuesta según el agente de usuario difuso (por ejemplo, sitios móviles, acceso como rastreador de motores de búsqueda). </font><font style="vertical-align: inherit;">Compara el código de estado de la respuesta y el código hash del cuerpo de la respuesta con la respuesta original.</font></font></p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pedido</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de solicitud y sección de encabezado (174 bytes)</font></font></summary>
+				
+				<pre><code>GET http://localhost/AlertMed/sistema HTTP/1.1<font></font>
+host: localhost<font></font>
+user-agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)<font></font>
+pragma: no-cache<font></font>
+cache-control: no-cache<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de la solicitud (0 bytes)</font></font></summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Respuesta</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de estado y sección de encabezado (369 bytes)</font></font></summary>
+				
+				<pre><code>HTTP/1.1 200 OK<font></font>
+Date: Mon, 20 Nov 2023 00:24:00 GMT<font></font>
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.0.28<font></font>
+X-Powered-By: PHP/8.0.28<font></font>
+Set-Cookie: PHPSESSID=42cb5bl24j8l0qaf0ma81r6vdj; path=/<font></font>
+Expires: Thu, 19 Nov 1981 08:52:00 GMT<font></font>
+Cache-Control: no-store, no-cache, must-revalidate<font></font>
+Pragma: no-cache<font></font>
+Content-Length: 1682<font></font>
+Content-Type: text/html; charset=UTF-8<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de respuesta (1682 bytes)</font></font></summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;<font></font>
+&lt;html lang="es"&gt;<font></font>
+<font></font>
+&lt;head&gt;<font></font>
+  &lt;meta charset="UTF-8"&gt;<font></font>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<font></font>
+  &lt;title&gt;AlertMed&lt;/title&gt;<font></font>
+  &lt;link rel="icon" href="img/icon.ico"&gt;<font></font>
+  &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"<font></font>
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"&gt;<font></font>
+  &lt;link rel="stylesheet" href="css/style.css"&gt;<font></font>
+&lt;/head&gt;<font></font>
+<font></font>
+&lt;body&gt;<font></font>
+  &lt;form id="formulario_login" method="post"&gt;<font></font>
+    &lt;div class="login"&gt;<font></font>
+      &lt;div class="login-box"&gt;<font></font>
+        &lt;div class="form-login"&gt;<font></font>
+          &lt;div class="title-login"&gt;<font></font>
+            &lt;h1&gt;Inicio de sesión&lt;/h1&gt;<font></font>
+            &lt;div class="icon"&gt;<font></font>
+              &lt;img src="img/icon.ico" alt="Logo hospital de melipilla" id="logo-login"&gt;<font></font>
+            &lt;/div&gt;<font></font>
+          &lt;/div&gt;<font></font>
+          &lt;label for=""&gt;Rut: &lt;/label&gt;<font></font>
+          &lt;input type="text" class="form-control" name="rut" id="rut" placeholder="Rut de ejemplo: 11111111-1"<font></font>
+            value=""&gt;<font></font>
+          &lt;small id="helpId" class="form-text text-muted"&gt;Introduzca su rut&lt;/small&gt;<font></font>
+          &lt;label for=""&gt;Contraseña: &lt;/label&gt;<font></font>
+          &lt;input type="password" class="form-control" name="clave" id="clave" placeholder=""&gt;<font></font>
+          &lt;small id="helpId" class="form-text text-muted"&gt;Introduzca su contraseña&lt;/small&gt;<font></font>
+          &lt;br&gt;<font></font>
+          &lt;input type="submit" name="btningresar" class="btn btn-primary" id="btningresar" value="Iniciar Sesión"<font></font>
+            onclick="return validarFormulario();"&gt;<font></font>
+          &lt;div id="alert"&gt;<font></font>
+            <font></font>
+          &lt;/div&gt;<font></font>
+        &lt;/div&gt;<font></font>
+      &lt;/div&gt;<font></font>
+    &lt;/div&gt;<font></font>
+  &lt;/form&gt;<font></font>
+  &lt;script src="js/validaciones.js"&gt;&lt;/script&gt;<font></font>
+&lt;/body&gt;<font></font>
+<font></font>
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Parámetro</font></font></th>
+		<td><pre><code>Header User-Agent</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ataque</font></font></th>
+		<td><pre><code>Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)</code></pre></td>
+	</tr>
+	
+	
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-1">
+					<h3>
+						<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Riesgo</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="risk-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Informativo</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , </font></font><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Confianza</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> = </font></font><span class="confidence-level"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Baja </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(2)</font></font></span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://localhost </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(2)</font></font></span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-9"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Galleta de alcance amplio </font></font></a> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(1)</font></font></span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OBTENER http://localhost/AlertMed/sistema/</font></font></span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Etiquetas de alerta</font></font></th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">WSTG-v42-SESS-02</font></font></a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OWASP_2021_A08</font></font></a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OWASP_2017_A06</font></font></a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Descripción de la alerta</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Las cookies pueden tener un alcance por dominio o ruta. </font><font style="vertical-align: inherit;">Esta verificación solo se refiere al alcance del dominio. El alcance del dominio aplicado a una cookie determina qué dominios pueden acceder a ella. </font><font style="vertical-align: inherit;">Por ejemplo, una cookie puede tener un alcance estricto en un subdominio, por ejemplo, www.nottrusted.com, o un alcance más amplio en un dominio principal, por ejemplo, nottrusted.com. </font><font style="vertical-align: inherit;">En este último caso, cualquier subdominio de nottrusted.com puede acceder a la cookie. </font><font style="vertical-align: inherit;">Las cookies de alcance flexible son comunes en megaaplicaciones como google.com y live.com. </font><font style="vertical-align: inherit;">Las cookies configuradas desde un subdominio como app.foo.bar se transmiten únicamente a ese dominio a través del navegador. </font><font style="vertical-align: inherit;">Sin embargo, las cookies cuyo ámbito es un dominio de nivel principal pueden transmitirse al principal o a cualquier subdominio del principal.</font></font></p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Otra información</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">El dominio de origen utilizado para la comparación fue: 
+</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">servidor local
+</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PHPSESSID=t7n20iq8vespitkahskq1s1ojm
+</font></font></p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pedido</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de solicitud y sección de encabezado (236 bytes)</font></font></summary>
+				
+				<pre><code>GET http://localhost/AlertMed/sistema/ HTTP/1.1<font></font>
+host: localhost<font></font>
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36<font></font>
+pragma: no-cache<font></font>
+cache-control: no-cache<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de la solicitud (0 bytes)</font></font></summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Respuesta</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de estado y sección de encabezado (384 bytes)</font></font></summary>
+				
+				<pre><code>HTTP/1.1 302 Found<font></font>
+Date: Mon, 20 Nov 2023 00:23:54 GMT<font></font>
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.0.28<font></font>
+X-Powered-By: PHP/8.0.28<font></font>
+Set-Cookie: PHPSESSID=t7n20iq8vespitkahskq1s1ojm; path=/<font></font>
+Expires: Thu, 19 Nov 1981 08:52:00 GMT<font></font>
+Cache-Control: no-store, no-cache, must-revalidate<font></font>
+Pragma: no-cache<font></font>
+Location: ../<font></font>
+Content-Length: 0<font></font>
+Content-Type: text/html; charset=UTF-8<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de respuesta (0 bytes)</font></font></summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Solución</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Utilice siempre cookies para un FQDN (nombre de dominio completo).</font></font></p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a href="file:///C:/Users/Joel/2023-11-19-ZAP-Report-.html#alert-type-13"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Atributo de elemento HTML controlable por el usuario (XSS potencial) </font></font></a> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(1)</font></font></span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PUBLICAR http://localhost/AlertMed/</font></font></span>
+												</summary>
+												
+<table class="alerts-table">
+	<tbody><tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Etiquetas de alerta</font></font></th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A03_2021-Injection/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OWASP_2021_A03</font></font></a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OWASP_2017_A01</font></font></a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Descripción de la alerta</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta verificación analiza la entrada proporcionada por el usuario en los parámetros de la cadena de consulta y los datos POST para identificar dónde se pueden controlar ciertos valores de atributos HTML. </font><font style="vertical-align: inherit;">Esto proporciona detección de puntos calientes para XSS (cross-site scripting) que requerirá una revisión adicional por parte de un analista de seguridad para determinar la explotabilidad.</font></font></p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Otra información</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Se encontraron valores de atributos HTML controlados por el usuario. </font><font style="vertical-align: inherit;">Intente inyectar caracteres especiales para ver si es posible utilizar XSS. </font><font style="vertical-align: inherit;">La página en la siguiente URL:
+</font></font></p>
+
+<p>
+</p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://localhost/AlertMed/
+</font></font></p>
+
+<p>
+</p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">parece incluir la entrada del usuario en: 
+</font></font></p>
+
+<p>
+</p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">un(n) atributo de etiqueta [valor] [entrada] 
+</font></font></p>
+
+<p>
+</p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">La entrada del usuario encontrada fue:
+</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">btningresar=Iniciar sesión
+</font></font></p>
+
+<p>
+</p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">El valor controlado por el usuario fue:
+</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">iniciar sesión</font></font></p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pedido</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de solicitud y sección de encabezado (381 bytes)</font></font></summary>
+				
+				<pre><code>POST http://localhost/AlertMed/ HTTP/1.1<font></font>
+host: localhost<font></font>
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36<font></font>
+pragma: no-cache<font></font>
+cache-control: no-cache<font></font>
+content-type: application/x-www-form-urlencoded<font></font>
+referer: http://localhost/AlertMed/<font></font>
+content-length: 49<font></font>
+Cookie: PHPSESSID=t7n20iq8vespitkahskq1s1ojm<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de la solicitud (49 bytes)</font></font></summary>
+				
+				<pre><code>rut=ZAP&amp;clave=ZAP&amp;btningresar=Iniciar+Sesi%C3%B3n</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Respuesta</font></font></th>
+		<td><details open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Línea de estado y sección de encabezado (311 bytes)</font></font></summary>
+				
+				<pre><code>HTTP/1.1 200 OK<font></font>
+Date: Mon, 20 Nov 2023 00:23:54 GMT<font></font>
+Server: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.0.28<font></font>
+X-Powered-By: PHP/8.0.28<font></font>
+Expires: Thu, 19 Nov 1981 08:52:00 GMT<font></font>
+Cache-Control: no-store, no-cache, must-revalidate<font></font>
+Pragma: no-cache<font></font>
+Content-Length: 1761<font></font>
+Content-Type: text/html; charset=UTF-8<font></font>
+<font></font>
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuerpo de respuesta (1761 bytes)</font></font></summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;<font></font>
+&lt;html lang="es"&gt;<font></font>
+<font></font>
+&lt;head&gt;<font></font>
+  &lt;meta charset="UTF-8"&gt;<font></font>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<font></font>
+  &lt;title&gt;AlertMed&lt;/title&gt;<font></font>
+  &lt;link rel="icon" href="img/icon.ico"&gt;<font></font>
+  &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"<font></font>
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"&gt;<font></font>
+  &lt;link rel="stylesheet" href="css/style.css"&gt;<font></font>
+&lt;/head&gt;<font></font>
+<font></font>
+&lt;body&gt;<font></font>
+  &lt;form id="formulario_login" method="post"&gt;<font></font>
+    &lt;div class="login"&gt;<font></font>
+      &lt;div class="login-box"&gt;<font></font>
+        &lt;div class="form-login"&gt;<font></font>
+          &lt;div class="title-login"&gt;<font></font>
+            &lt;h1&gt;Inicio de sesión&lt;/h1&gt;<font></font>
+            &lt;div class="icon"&gt;<font></font>
+              &lt;img src="img/icon.ico" alt="Logo hospital de melipilla" id="logo-login"&gt;<font></font>
+            &lt;/div&gt;<font></font>
+          &lt;/div&gt;<font></font>
+          &lt;label for=""&gt;Rut: &lt;/label&gt;<font></font>
+          &lt;input type="text" class="form-control" name="rut" id="rut" placeholder="Rut de ejemplo: 11111111-1"<font></font>
+            value=""&gt;<font></font>
+          &lt;small id="helpId" class="form-text text-muted"&gt;Introduzca su rut&lt;/small&gt;<font></font>
+          &lt;label for=""&gt;Contraseña: &lt;/label&gt;<font></font>
+          &lt;input type="password" class="form-control" name="clave" id="clave" placeholder=""&gt;<font></font>
+          &lt;small id="helpId" class="form-text text-muted"&gt;Introduzca su contraseña&lt;/small&gt;<font></font>
+          &lt;br&gt;<font></font>
+          &lt;input type="submit" name="btningresar" class="btn btn-primary" id="btningresar" value="Iniciar Sesión"<font></font>
+            onclick="return validarFormulario();"&gt;<font></font>
+          &lt;div id="alert"&gt;<font></font>
+            &lt;div class="alert alert-danger"&gt;Rut o contraseña no existe en el sistema&lt;/div&gt;<font></font>
+          &lt;/div&gt;<font></font>
+        &lt;/div&gt;<font></font>
+      &lt;/div&gt;<font></font>
+    &lt;/div&gt;<font></font>
+  &lt;/form&gt;<font></font>
+  &lt;script src="js/validaciones.js"&gt;&lt;/script&gt;<font></font>
+&lt;/body&gt;<font></font>
+<font></font>
+&lt;/html&gt;</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Parámetro</font></font></th>
+		<td><pre><code>btningresar</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Solución</font></font></th>
+		<td> 
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Valide todas las entradas y desinfecte las salidas antes de escribir en cualquier atributo HTML.</font></font></p>
+ </td>
+	</tr>
+</tbody></table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Apéndice</font></font></h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tipos de alerta</font></font></h3>
+				<p class="alert-types-intro"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta sección contiene información adicional sobre los tipos de alertas del informe.</font></font></p>
+				<ol>
+					<li id="alert-type-0">
+						<h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ausencia de tokens Anti-CSRF</font></font></h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fuente</font></font></th>
+								<td>
+									
+									   <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">planteado por un escáner pasivo </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">( </font></font><a href="https://www.zaproxy.org/docs/alerts/10202/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ausencia de tokens Anti-CSRF</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> )
+									</font></font></span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ID CWE</font></font></th>
+								<td><a href="https://cwe.mitre.org/data/definitions/352.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">352</font></font></a></td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Identificación WASC</font></font></th>
+								<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9</font></font></td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Referencia</font></font></th>
+								<td>
+									<ol>
+										<li><a href="http://projects.webappsec.org/Cross-Site-Request-Forgery"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://projects.webappsec.org/Cross-Site-Request-Forgery</font></font></a></li>
+										<li><a href="https://cwe.mitre.org/data/definitions/352.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://cwe.mitre.org/data/definitions/352.html</font></font></a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+					<li id="alert-type-1">
+						<h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Encabezado de la política de seguridad de contenido (CSP) no establecido</font></font></h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fuente</font></font></th>
+								<td>
+									
+									   <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">generado por un escáner pasivo </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">( </font></font><a href="https://www.zaproxy.org/docs/alerts/10038/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">encabezado de política de seguridad de contenido (CSP) no establecido</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> )
+									</font></font></span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ID CWE</font></font></th>
+								<td><a href="https://cwe.mitre.org/data/definitions/693.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">693</font></font></a></td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Identificación WASC</font></font></th>
+								<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">15</font></font></td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Referencia</font></font></th>
+								<td>
+									<ol>
+										<li><a href="https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introtaining_Content_Security_Policy</font></font></a></li>
+										<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</font></font></a></li>
+										<li><a href="http://www.w3.org/TR/CSP/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://www.w3.org/TR/CSP/</font></font></a></li>
+										<li><a href="http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html</font></font></a></li>
+										<li><a href="http://www.html5rocks.com/en/tutorials/security/content-security-policy/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://www.html5rocks.com/en/tutorials/security/content-security-policy/</font></font></a></li>
+										<li><a href="http://caniuse.com/#feat=contentsecuritypolicy"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://caniuse.com/#feat=contentsecuritypolicy</font></font></a></li>
+										<li><a href="http://content-security-policy.com/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://content-security-policy.com/</font></font></a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+					<li id="alert-type-2">
+						<h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Archivo oculto encontrado</font></font></h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fuente</font></font></th>
+								<td>
+									
+									   <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">levantado por un escáner activo </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">( </font></font><a href="https://www.zaproxy.org/docs/alerts/40035/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Buscador de archivos ocultos</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> )
+									</font></font></span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ID CWE</font></font></th>
+								<td><a href="https://cwe.mitre.org/data/definitions/538.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">538</font></font></a></td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Identificación WASC</font></font></th>
+								<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">13</font></font></td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Referencia</font></font></th>
+								<td>
+									<ol>
+										<li><a href="https://blog.hboeck.de/archives/892-Introducing-Snallygaster-a-Tool-to-Scan-for-Secrets-on-Web-Servers.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://blog.hboeck.de/archives/892-Introduciendo-Snallygaster-a-Tool-to-Scan-for-Secrets-on-Web-Servers.html</font></font></a></li>
+										<li><a href="https://httpd.apache.org/docs/current/mod/mod_status.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://httpd.apache.org/docs/current/mod/mod_status.html</font></font></a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+					<li id="alert-type-3">
+						<h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Falta el encabezado anti-clickjacking</font></font></h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fuente</font></font></th>
+								<td>
+									
+									   <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">levantado por un escáner pasivo </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">( </font></font><a href="https://www.zaproxy.org/docs/alerts/10020/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">encabezado anti-clickjacking</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> )
+									</font></font></span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ID CWE</font></font></th>
+								<td><a href="https://cwe.mitre.org/data/definitions/1021.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1021</font></font></a></td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Identificación WASC</font></font></th>
+								<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">15</font></font></td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Referencia</font></font></th>
+								<td>
+									<ol>
+										<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</font></font></a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+					<li id="alert-type-4">
+						<h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cookie sin bandera HttpOnly</font></font></h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fuente</font></font></th>
+								<td>
+									
+									   <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">planteado por un escáner pasivo </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">( </font></font><a href="https://www.zaproxy.org/docs/alerts/10010/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cookie No HttpOnly Flag</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> )
+									</font></font></span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ID CWE</font></font></th>
+								<td><a href="https://cwe.mitre.org/data/definitions/1004.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1004</font></font></a></td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Identificación WASC</font></font></th>
+								<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">13</font></font></td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Referencia</font></font></th>
+								<td>
+									<ol>
+										<li><a href="https://owasp.org/www-community/HttpOnly"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://owasp.org/www-community/HttpOnly</font></font></a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+					<li id="alert-type-5">
+						<h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cookie sin atributo SameSite</font></font></h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fuente</font></font></th>
+								<td>
+									
+									   <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">generado por un escáner pasivo </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">( </font></font><a href="https://www.zaproxy.org/docs/alerts/10054/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">cookie sin atributo SameSite</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> )
+									</font></font></span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ID CWE</font></font></th>
+								<td><a href="https://cwe.mitre.org/data/definitions/1275.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1275</font></font></a></td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Identificación WASC</font></font></th>
+								<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">13</font></font></td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Referencia</font></font></th>
+								<td>
+									<ol>
+										<li><a href="https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site</font></font></a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+					<li id="alert-type-6">
+						<h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">El servidor filtra información a través de los campos de encabezado de respuesta HTTP "X-Powered-By"</font></font></h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fuente</font></font></th>
+								<td>
+									
+									   <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">generado por un escáner pasivo </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">( </font></font><a href="https://www.zaproxy.org/docs/alerts/10037/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">el servidor filtra información a través de los campos de encabezado de respuesta HTTP "X-Powered-By"</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> )
+									</font></font></span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ID CWE</font></font></th>
+								<td><a href="https://cwe.mitre.org/data/definitions/200.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">200</font></font></a></td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Identificación WASC</font></font></th>
+								<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">13</font></font></td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Referencia</font></font></th>
+								<td>
+									<ol>
+										<li><a href="http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</font></font></a></li>
+										<li><a href="http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</font></font></a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+					<li id="alert-type-7">
+						<h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">El servidor filtra información de la versión a través del campo de encabezado de respuesta HTTP "Servidor"</font></font></h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fuente</font></font></th>
+								<td>
+									
+									   <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">generado por un escáner pasivo </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">( </font></font><a href="https://www.zaproxy.org/docs/alerts/10036/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">encabezado de respuesta del servidor HTTP</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> )
+									</font></font></span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ID CWE</font></font></th>
+								<td><a href="https://cwe.mitre.org/data/definitions/200.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">200</font></font></a></td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Identificación WASC</font></font></th>
+								<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">13</font></font></td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Referencia</font></font></th>
+								<td>
+									<ol>
+										<li><a href="http://httpd.apache.org/docs/current/mod/core.html#servertokens"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://httpd.apache.org/docs/current/mod/core.html#servertokens</font></font></a></li>
+										<li><a href="http://msdn.microsoft.com/en-us/library/ff648552.aspx#ht_urlscan_007"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://msdn.microsoft.com/en-us/library/ff648552.aspx#ht_urlscan_007</font></font></a></li>
+										<li><a href="http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx</font></font></a></li>
+										<li><a href="http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html</font></font></a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+					<li id="alert-type-8">
+						<h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Falta el encabezado X-Content-Type-Options</font></font></h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fuente</font></font></th>
+								<td>
+									
+									   <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">planteado por un escáner pasivo </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">( </font></font><a href="https://www.zaproxy.org/docs/alerts/10021/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Falta el encabezado X-Content-Type-Options</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> )
+									</font></font></span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ID CWE</font></font></th>
+								<td><a href="https://cwe.mitre.org/data/definitions/693.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">693</font></font></a></td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Identificación WASC</font></font></th>
+								<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">15</font></font></td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Referencia</font></font></th>
+								<td>
+									<ol>
+										<li><a href="http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</font></font></a></li>
+										<li><a href="https://owasp.org/www-community/Security_Headers"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://owasp.org/www-community/Security_Headers</font></font></a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+					<li id="alert-type-9">
+						<h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cookie de alcance amplio</font></font></h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fuente</font></font></th>
+								<td>
+									
+									   <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">planteado por un escáner pasivo </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">( </font></font><a href="https://www.zaproxy.org/docs/alerts/90033/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">cookies de alcance flexible</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> )
+									</font></font></span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ID CWE</font></font></th>
+								<td><a href="https://cwe.mitre.org/data/definitions/565.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">565</font></font></a></td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Identificación WASC</font></font></th>
+								<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">15</font></font></td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Referencia</font></font></th>
+								<td>
+									<ol>
+										<li><a href="https://tools.ietf.org/html/rfc6265#section-4.1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://tools.ietf.org/html/rfc6265#section-4.1</font></font></a></li>
+										<li><a href="https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</font></font></a></li>
+										<li><a href="http://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_cookies"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_cookies</font></font></a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+					<li id="alert-type-10">
+						<h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aplicación web moderna</font></font></h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fuente</font></font></th>
+								<td>
+									
+									   <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">planteado por un escáner pasivo </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">( </font></font><a href="https://www.zaproxy.org/docs/alerts/10109/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">aplicación web moderna</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> )
+									</font></font></span>   
+								</td>
+							</tr>
+							
+							
+							
+						</tbody></table>
+					</li>
+					<li id="alert-type-11">
+						<h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Respuesta de gestión de sesión identificada</font></font></h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fuente</font></font></th>
+								<td>
+									
+									   <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">generado por un escáner pasivo </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">( </font></font><a href="https://www.zaproxy.org/docs/alerts/10112/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Respuesta de gestión de sesión identificada</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> )
+									</font></font></span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Referencia</font></font></th>
+								<td>
+									<ol>
+										<li><a href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</font></font></a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+					<li id="alert-type-12">
+						<h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Agente de usuario Fuzzer</font></font></h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fuente</font></font></th>
+								<td>
+									
+									   <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">generado por un escáner activo </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">( </font></font><a href="https://www.zaproxy.org/docs/alerts/10104/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">User Agent Fuzzer</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> )
+									</font></font></span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Referencia</font></font></th>
+								<td>
+									<ol>
+										<li><a href="https://owasp.org/wstg"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://owasp.org/wstg</font></font></a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+					<li id="alert-type-13">
+						<h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Atributo de elemento HTML controlable por el usuario (Posible XSS)</font></font></h4>
+						<table class="alert-types-table">
+							<tbody><tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fuente</font></font></th>
+								<td>
+									
+									   <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">generado por un escáner pasivo </font></font></span> <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">( </font></font><a href="https://www.zaproxy.org/docs/alerts/10031/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">atributo de elemento HTML controlable por el usuario (potencial XSS)</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> )
+									</font></font></span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ID CWE</font></font></th>
+								<td><a href="https://cwe.mitre.org/data/definitions/20.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">20</font></font></a></td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Identificación WASC</font></font></th>
+								<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">20</font></font></td>
+							</tr>
+							<tr>
+								<th scope="row"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Referencia</font></font></th>
+								<td>
+									<ol>
+										<li><a href="http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://websecuritytool.codeplex.com/wikipage?title=Checks#user-controlled-html-attribute</font></font></a></li>
+									</ol>
+								</td>
+							</tr>
+						</tbody></table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main><div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: &#39;Google Sans&#39;, Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class=" VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c"><img src="./Informe de escaneo ZAP_files/24px.svg" width="24" height="24" alt=""></div><div class=" VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c"><div class="VIpgJd-yAWNEb-hvhgNd-IuizWc" dir="ltr">Texto original</div><div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">Valora esta traducción</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">Tu opinión servirá para ayudar a mejorar el Traductor de Google</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Buena traducción" aria-label="Buena traducción" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Mala traducción" aria-label="Mala traducción" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="file://translate.googleapis.com/translate_voting?client=te_lib" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0" src="./Informe de escaneo ZAP_files/saved_resource.html"></iframe></div></div></div>
+
+
+
+
+
+</body></html>

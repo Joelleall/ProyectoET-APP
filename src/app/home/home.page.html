@@ -1,0 +1,30 @@
+<ion-content [fullscreen]="true">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <div id="contenedor">
+
+    <div class="title-container">
+      <h1 class="title">Te llevo APP</h1>
+    </div>
+    
+    <div class="container">
+      <div class="subtitle-container">
+        <h2 class="animate__animated animate__swing">¿Quién eres?</h2>
+      </div>
+      <ion-button class="animate__animated animate__backInLeft" (click)="navigateToConductor()">
+        <img src="../../assets/icon/conductor.png" alt="Imagen 1">
+      </ion-button>
+      <p class="box-text">Conductor</p>
+
+      <ion-button class="animate__animated animate__backInRight" (click)="navigateToPasajero()">
+        <img src="../../assets/icon/pasajero.png" alt="Imagen 2">
+      </ion-button>
+      <p class="box-text">Pasajero</p>
+    </div>
+    <footer>
+      <ion-icon (click)="navigateToHistorial()" name="stats-chart-outline"></ion-icon>
+      <ion-icon (click)="navigateToLogin()" name="home-outline"></ion-icon>
+      <ion-icon name="wallet-outline" (click)="navigateToPaymentPage()"></ion-icon>
+    </footer>
+  </div>
+</ion-content>
+
